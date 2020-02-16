@@ -1,0 +1,24 @@
+{
+  "db": {
+    "type": "mysql",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "kingdee123",
+    "db_name": "blog"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "password": ""
+  },
+  "document": {
+    "base": "/blog/base",
+    "conf": "conf",
+    "sub": {
+      "img": "img/",
+      "photo": "photo/",
+      "document": "document/"
+    }
+  }
+}
