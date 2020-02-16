@@ -9,7 +9,7 @@ from sqlalchemy import Column, Integer, String
 class NumberItem(BaseModel):
     __tablename__ = 'number_item'
 
-    category_id = Column(Integer)
-    number = Column(String(50))
-    name = Column(String(50))
-    description = Column(String(100))
+    category_id = Column(Integer, doc='编码类别ID')
+    number = Column(String(50), doc='编码')
+    name = Column(String(50), doc='编码名称')
+    description = Column(String(100), doc='描述')

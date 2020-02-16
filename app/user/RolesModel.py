@@ -9,5 +9,5 @@ from sqlalchemy import Column, Integer, String
 class RolesInfo(BaseModel):
     __tablename__ = 'roles_info'
 
-    name = Column(Integer)
-    description = Column(String(100))
+    name = Column(Integer, doc='权限名称')
+    description = Column(String(100), doc='权限描述')

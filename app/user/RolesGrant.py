@@ -10,5 +10,5 @@ from sqlalchemy import Column, Integer, String
 class RolesGrant(BaseModel):
     __tablename__ = 'roles_grant'
 
-    user_id = Column(Integer)
-    role_id = Column(Integer)
+    user_id = Column(Integer, doc='用户ID')
+    role_id = Column(Integer, doc='权限ID')

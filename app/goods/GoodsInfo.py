@@ -4,7 +4,7 @@
 # File: GoodsInfo.py
 
 from base.base.base import BaseModel
-from sqlalchemy import Column, Integer, String, Float
+from sqlalchemy import Column, Integer, String, Float, DateTime
 
 
 class GoodsInfo(BaseModel):
@@ -24,3 +24,5 @@ class GoodsShowInfo(BaseModel):
     description = Column(String(100), doc='商品描述')
     icon = Column(String, doc='商品图片index')
     price = Column(Float, doc='商品价格')
+    online_time = Column(DateTime, doc='商品上线时间')
+    offline_time = Column(DateTime, doc='商品下架时间')
